@@ -10,12 +10,12 @@ from VCPlayBot.modules.play import cb_admin_check
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>✨ **Welcome user, i'm {query.message.from_user.mention}** \n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
+        f"""<b>✨ **so dhawow, waxan ahay {query.message.from_user.mention}** \n
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐖𝐮𝐱𝐮 𝐤𝐮 𝐨𝐠𝐚𝐥𝐚𝐧𝐚𝐲𝐚  𝐢𝐧𝐚𝐚𝐝 𝐰𝐚𝐱𝐚𝐝 𝐗𝐢𝐢𝐬𝐞𝐲𝐬𝐢𝐢𝐧 𝐤𝐮 𝐝𝐡𝐚𝐠𝐞𝐲𝐬𝐚𝐭𝐚𝐧 𝐚𝐝𝐢𝐠𝐚 𝐢𝐲𝐨 𝐚𝐬𝐱𝐚𝐛𝐭𝐚𝐝𝐚𝐛𝐚 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭 !**
 
-💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
+💡 **💡𝐛𝐨𝐭𝐤𝐚 𝐬𝐢𝐝𝐮𝐮 𝐮𝐬𝐡𝐚𝐪𝐞𝐲𝐨 𝐢𝐲𝐨 𝐚𝐦𝐚𝐫𝐚𝐝𝐢𝐬𝐚𝐛𝐚 𝐰𝐚𝐱𝐚𝐝 𝐤𝐚𝐡𝐞𝐥𝐢 𝐤𝐚𝐫𝐭𝐚𝐚 𝐛𝐮𝐭𝐭𝐨𝐧𝐤𝐚  » 📚𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 !**
 
-❓ **𝗙𝗼𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗯𝗼𝘂𝘁 𝗮𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁, 𝗷𝘂𝘀𝘁 𝘁𝘆𝗽𝗲 /help**
+❓ **❓𝐒𝐢 𝐚𝐚𝐚𝐝 𝐮 𝐡𝐞𝐬𝐡𝐨 𝐦𝐚𝐜𝐥𝐮𝐮𝐦𝐚𝐚𝐝 𝐤𝐚𝐥𝐨 𝐛𝐚𝐝𝐚𝐧 /𝐬𝐭𝐚𝐫𝐭 𝐪𝐨𝐫 /help**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -39,7 +39,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/QuennArzoo/VCPlayBot"
+                        "🧪 Source Code 🧪", url="https://github.com/captainAbdisamad/audiobot"
                     )
                 ]
             ]
@@ -51,9 +51,9 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu !</b>
+        f"""<b>💡 walal kuso dhawow qeeybta caawinta qaaska ah🇸🇴 !</b>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
+**menu -kan waxaad ku furi kartaa dhowr menus oo talis oo la heli karo, liis kasta oo amarka waxaa sidoo kale ku jira sharraxaad kooban oo amar kasta ah**
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
@@ -97,7 +97,7 @@ async def cbhelp(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the basic commands</b>
+        f"""<b>🏮 halkan waa amarrada aasaasiga ah</b>
 
 🎧 [ GROUP VC CMD ]
 
@@ -136,7 +136,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the advanced commands</b>
+        f"""<b>🏮 halkan waa amarrada horumarsan</b>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -160,7 +160,7 @@ async def cbadvanced(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the admin commands</b>
+        f"""<b>🏮 halkan waa amarrada maamulaha</b>
 
 /player - show the music playing status
 /pause - pause the music streaming
@@ -194,7 +194,7 @@ async def cbadmin(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the sudo commands</b>
+        f"""<b>🏮 halkan waa amarrada sudo</b>
 
 /userbotleaveall - order the assistant to leave from all group
 /gcast - send a broadcast message trought the assistant
@@ -218,7 +218,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbowner"))
 async def cbowner(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the owner commands</b>
+        f"""<b>🏮 halkan waa amarkii milkiilaha</b>
 
 /stats - show the bot statistic
 /broadcast - send a broadcast message from bot
@@ -244,7 +244,7 @@ async def cbowner(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbfun"))
 async def cbfun(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the fun commands</b>
+        f"""<b>🏮 halkan waa amarrada xiisaha leh</b>
 
 /chika - check it by yourself
 /wibu - check it by yourself
@@ -302,7 +302,9 @@ async def close(_, query: CallbackQuery):
 @cb_admin_check
 async def cbback(_, query: CallbackQuery):
     await query.edit_message_text(
-        "**💡 here is the control menu of bot :**",
+        "**💡 halkan waa menu -ka xakamaynta bot
+
+ :**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -412,7 +414,7 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu !</b>
+        f"""<b>💡 walal kuso dhawow qeybta caawinta !</b>
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
