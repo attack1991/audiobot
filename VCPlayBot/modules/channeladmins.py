@@ -34,7 +34,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Nothing is playing!")
     else:
         callsmusic.pause(chat_id)
-        await message.reply_text("▶️ Paused!")
+        await message.reply_text("▶️ wad ku guleystay inad istajiso!")
 
 
 @Client.on_message(filters.command(["channelresume","cresume"]) & filters.group & ~filters.edited)
@@ -55,7 +55,7 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Nothing is paused!")
     else:
         callsmusic.resume(chat_id)
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ wad ku guleystay inad dib u bilawato!")
 
 
 @Client.on_message(filters.command(["channelend","cend"]) & filters.group & ~filters.edited)
@@ -71,7 +71,7 @@ async def stop(_, message: Message):
       return    
     chat_id = chid
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ Nothing is streaming!")
+        await message.reply_text("❗ wax shidan malahan!")
     else:
         try:
             queues.clear(chat_id)
@@ -79,7 +79,7 @@ async def stop(_, message: Message):
             pass
 
         await callsmusic.stop(chat_id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ Wax shidan malahan!")
 
 
 @Client.on_message(filters.command(["channelskip","cskip"]) & filters.group & ~filters.edited)
