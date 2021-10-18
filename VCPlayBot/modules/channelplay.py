@@ -347,7 +347,7 @@ async def m_cb(b, cb):
 @authorized_users_only
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>Fadlan dulqado </b>")
 
     try:
       conchat = await _.get_chat(message.chat.id)
@@ -390,7 +390,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await lel.edit(
-                        "<b>helper userbot joined your channel</b>",
+                        "<b>🆘Cawiyaha wuu so galay groupkada</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -444,7 +444,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ Videos kabadan {DURATION_LIMIT} minute(s) la ima ogalan inan sii dayo!"
             )
             return
         keyboard = InlineKeyboardMarkup(
@@ -471,7 +471,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **Fadlan wll dulqaad muuji**")
         ydl_opts = {"format": "bestaudio/best"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -488,7 +488,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "Song not found.Try another song or maybe spell it properly."
+                "ma anan heli fadlan iskuday inad ii ditto wax saxan."
             )
             print(str(e))
             return
@@ -498,7 +498,7 @@ async def play(_, message: Message):
                 dur += (int(dur_arr[i]) * secmul)
                 secmul *= 60
             if (dur / 60) > DURATION_LIMIT:
-                 await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+                 await lel.edit(f"❌ Videos kabadan {DURATION_LIMIT} Daqiiqado La'ima ogalan iman sui dayo!")
                  return
         except:
             pass        
@@ -525,7 +525,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **Fadlan dulqado wll**")
         ydl_opts = {"format": "bestaudio/best"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -542,7 +542,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "Song not found.Try another song or maybe spell it properly."
+                "Ma anan heli fadlan iskuday inad ii ditto wax saxan."
             )
             print(str(e))
             return
@@ -552,7 +552,7 @@ async def play(_, message: Message):
                 dur += (int(dur_arr[i]) * secmul)
                 secmul *= 60
             if (dur / 60) > DURATION_LIMIT:
-                 await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+                 await lel.edit(f"❌ Videos kabadan {DURATION_LIMIT} minutes la ima ogalan inan si dayo!")
                  return
         except:
             pass
@@ -585,7 +585,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song <b>queued</b> at position {position}!",
+            caption=f"#⃣ Maqalka sad codsatay <b>queued</b> at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -603,7 +603,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> the song requested by {} via Youtube Music 😎 in Linked Channel".format(
+            caption="▶️ <b>Playing</b> waxa codsaday {} via Youtube Music 😎 in Linked Channel".format(
                 message.from_user.mention()
             ),
         )
@@ -615,7 +615,7 @@ async def play(_, message: Message):
 @authorized_users_only
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **xoolo tahaye waxyar isug**")
     try:
       conchat = await client.get_chat(message_.chat.id)
       conid = conchat.linked_chat.id
@@ -627,7 +627,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
       administrators = await get_administrators(conv)
     except:
-      await message.reply("Am I admin of Channel")
+      await message.reply("groupkada admin maka ahay?")
     try:
         user = await USER.get_me()
     except:
@@ -642,14 +642,14 @@ async def jiosaavn(client: Client, message_: Message):
             if administrator == message_.from_user.id:
                 if message_.chat.title.startswith("Channel Music: "):
                     await lel.edit(
-                        "<b>Remember to add helper to your channel</b>",
+                        "<b>xasuso inaad cawiyaha kuso darto</b>",
                     )
                     pass
                 try:
                     invitelink = await client.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Add me as admin of yor group first</b>",
+                        "<b>👨‍💻ugu horeyn admin iga dhig</b>",
                     )
                     return
 
