@@ -447,7 +447,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>Fadlan dulqado</b>")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -491,7 +491,7 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again manually request here @AwesomeSupport with your group link</b>",
+                        "\n\nOr manually add assistant to your Group and try again manually request here @Captain_help with your group link</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -559,7 +559,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 <b>Processing</b>")
+        await lel.edit("🎵 <b>Fadlan dulqado mujj</b>")
         ydl_opts = {"format": "bestaudio/best"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -613,16 +613,16 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **Fadlan dulqado muji**")
         ydl_opts = {"format": "bestaudio/best"}
         
         try:
           results = YoutubeSearch(query, max_results=5).to_dict()
         except:
-          await lel.edit("Give me something to play")
+          await lel.edit("waxan shido isii")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
-            toxxt = "**Select the song you want to play**\n\n"
+            toxxt = "**Dooqo mida aad Rabto**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
@@ -653,7 +653,7 @@ async def play(_, message: Message):
             return
             # Returning to pornhub
         except:
-            await lel.edit("No Enough results to choose.. Starting direct play..")
+            await lel.edit("waxad doqato malahan.. Starting direct play..")
                         
             # print(results)
             try:
@@ -669,7 +669,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                    "Song not found.Try another song or maybe spell it properly."
+                    "Maxa ka qaldan adu."
                 )
                 print(str(e))
                 return
@@ -679,7 +679,7 @@ async def play(_, message: Message):
                     dur += (int(dur_arr[i]) * secmul)
                     secmul *= 60
                 if (dur / 60) > DURATION_LIMIT:
-                     await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+                     await lel.edit(f"❌ Videos kabadan {DURATION_LIMIT} minutes la ima ogalan inan shido!")
                      return
             except:
                 pass
@@ -712,7 +712,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song <b>queued</b> at position {position}!",
+            caption=f"#⃣ wa kan videoga ad dalbatay<b>queued</b> at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -729,7 +729,7 @@ async def play(_, message: Message):
         try:
             await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Group Call is not connected or I can't join it")
+            message.reply("Group callka wuu xiranyahay waxba ma shido karo")
             return
         await message.reply_photo(
             photo="final.png",
@@ -747,7 +747,7 @@ async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>war inyar nasug</b>")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -801,7 +801,7 @@ async def ytplay(_, message: Message):
             f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually request here @AwesomeSupport with your group link</i>"
         )
         return
-    await lel.edit("🔎 <b>Finding</b>")
+    await lel.edit("🔎 <b>Raadin</b>")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
@@ -810,7 +810,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵 <b>Processing</b>")
+    await lel.edit("🎵 <b>walalo inyar sug</b>")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -837,7 +837,7 @@ async def ytplay(_, message: Message):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f"❌ Videos kabadan {DURATION_LIMIT} minutes la ima ogalan inan sii dayo!")
              return
     except:
         pass    
@@ -870,7 +870,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song <b>queued</b> at position {position}!",
+            caption=f"#⃣ was diyaar <b>queued</b> at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -905,7 +905,7 @@ async def jiosaavn(client: Client, message_: Message):
     global que
     if message_.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message_.reply("🔄 <b>Processing</b>")
+    lel = await message_.reply("🔄 <b>inyar sug</b>")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
