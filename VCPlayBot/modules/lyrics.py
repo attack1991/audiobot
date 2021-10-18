@@ -18,7 +18,7 @@ async def _(client, message):
     lel = await message.reply("Searching For Lyrics.....")
     query = message.text
     if not query:
-        await lel.edit("`What I am Supposed to find `")
+        await lel.edit("`Maxa la igu talagalay iman Qabto `")
         return
 
     song = ""
