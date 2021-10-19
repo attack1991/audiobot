@@ -136,7 +136,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the advanced commands</b>
+        f"""<b>🏮 qeeybta wa amarada hormarsan</b>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -160,7 +160,7 @@ async def cbadvanced(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the admin commands</b>
+        f"""<b>🏮 Qeeybta adminka ayaa leh</b>
 
 /player - show the music playing status
 /pause - pause the music streaming
@@ -218,7 +218,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbowner"))
 async def cbowner(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the owner commands</b>
+        f"""<b>🏮 Qeeybta ownerka aya leh</b>
 
 /stats - show the bot statistic
 /broadcast - send a broadcast message from bot
@@ -244,7 +244,7 @@ async def cbowner(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbfun"))
 async def cbfun(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the fun commands</b>
+        f"""<b>🏮 qeeybta wa qeyb xiiso leh</b>
 
 /chika - check it by yourself
 /wibu - check it by yourself
