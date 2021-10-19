@@ -3,9 +3,9 @@ The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/captainAbdisamad/audiobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-- Support Channel :- [Awesome Bot](http://t.me/Somalimusicbot)
+- Support Channel :- [Somali Bot](http://t.me/Somalimusicbot)
 
-- Support Group :- [Awesome Support](http://t.me/Somalibots_help)
+- Support Group :- [Somalibot Support](http://t.me/Somalibots_help)
 
 
 ```
@@ -91,5 +91,5 @@ If you donlt like to play in linked channel:
 
 #### Special Credits
 - [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
-- [Awesome Bot](http://t.me/Captain_help) Channel bot list
+- [Awesome Bot](https://t.me/Laylalist) Channel bot list
 - [Dev](http://t.me/HEROGAMERS1) Hero owner of this bot
