@@ -8,7 +8,7 @@ The easiest way to deploy this Bot
 
 
 
-- Support Channel :- [Special credit](https://t.me/HEROGAMERS1)
+- Respect :- [Special credit](https://t.me/HEROGAMERS1)
 
 - Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
 
