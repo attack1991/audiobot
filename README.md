@@ -10,7 +10,7 @@ The easiest way to deploy this Bot
 
 - Respect :- [Special credit](https://t.me/HEROGAMERS1)
 
-- Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
+- Support Channel :- [Somali Support](http://t.me/Somalimusicbot)
 
 
 
