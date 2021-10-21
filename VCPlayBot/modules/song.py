@@ -35,7 +35,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    m = message.reply("🔎 Finding the song...")
+    m = message.reply("🔎 Fadlan dulqado...")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -52,7 +52,7 @@ def song(client, message):
         results[0]["views"]
 
     except Exception as e:
-        m.edit("❌ Found Nothing.\n\nTry another keywork or maybe spell it properly.")
+        m.edit("❌ waxba mahelin.\n\nTry another keywork or maybe spell it properly.")
         print(str(e))
         return
     m.edit("Downloading the song ")
@@ -76,7 +76,7 @@ def song(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error")
+        m.edit("❌ cilad")
         print(e)
 
     try:
@@ -257,7 +257,7 @@ async def jssong(_, message):
         return
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "waxkale ban dajinoya hada ee marke iskuday."
         )
         return
     is_downloading = True
@@ -290,7 +290,7 @@ async def ytmusic(client, message: Message):
     global is_downloading
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "waxkale ban dajinoya hada ee marke iskuday."
         )
         return
 
@@ -334,7 +334,7 @@ async def ytmusic(client, message: Message):
 
             if duration > DURATION_LIMIT:
                 await pablo.edit(
-                    f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ Videos kabadan {DURATION_LIMIT} minute(s) l ima ogolan, videogan wa {duration} minute(s)"
                 )
                 is_downloading = False
                 return
